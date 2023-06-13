@@ -13,17 +13,17 @@ struct MessageView: View {
     var body: some View {
         HStack(spacing: 0) {
             VStack(alignment: .leading, spacing: 0) {
-                HStack(alignment: message.isUserMessage ? .center : .top) {
+                HStack(alignment: message.isUserMessage ? .center : .center) {
                     Image(systemName: message.isUserMessage ? "person" : "brain")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: message.isUserMessage ? 30 : 35, height: 30)
                         .padding(.trailing, 10)
                     
                     switch message.type {
                     case.text:
                         let output = (message.content as! String).trimmingCharacters(in: .whitespacesAndNewlines)
                         Text(output)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .textSelection(.enabled)
                     case .image:
                         HStack(alignment: .center) {
@@ -85,13 +85,13 @@ struct MessageView: View {
             }
             Spacer()
         }
-        .background(message.isUserMessage ? Color(red: 53/255, green: 54/255, blue: 65/255) : Color(red: 68/255, green: 70/255, blue: 83/255))
-                .shadow( radius: message.isUserMessage ? 0 : 0.5)
+        .background(message.isUserMessage ? Color(red: 240/255, green: 240/255, blue: 240/255) : Color(red: 200/255, green: 200/255, blue: 200/255))
+        .shadow( radius: message.isUserMessage ? 0.5 : 0.5)
     }
 }
 
 struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageView(message: Message(content: "Fuck you", type: .error, isUserMessage: false))
+        MessageView(message: Message(content: "Test message here...", type: .text, isUserMessage: true))
     }
 }

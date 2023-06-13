@@ -5,17 +5,25 @@
 //  Created by Caleb Hrenchir on 6/12/23.
 //
 
+import UIKit
 import SwiftUI
+import SafariServices
 
 struct ContentView: View {
+    @State private var isLoggedIn = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            TabView {
+                GPT3View().tabItem {
+                    Label("CHAT", systemImage: "ellipses.bubble")
+                }
+                
+                DalleView().tabItem {
+                    Label("DALL-E 2", systemImage: "paintbrush")
+                }
+            }
         }
-        .padding()
     }
 }
 

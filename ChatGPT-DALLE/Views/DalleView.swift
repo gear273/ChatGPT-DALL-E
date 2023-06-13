@@ -8,6 +8,20 @@
 import SwiftUI
 
 struct DalleView: View {
+    let examples = [
+        "\"A purple elephant wearing a top hat.\"",
+        "\"A futuristic cityscape at sunset with flying cars.\"",
+        "\"A beach scene with palm trees, white sand, and turquoise water.\"",
+        "\"A steaming cup of coffee with latte art.\"",
+        "\"A mystical forest with glowing mushrooms and fairies.\"",
+        "\"A vintage bicycle with a basket filled with colorful flowers.\"",
+        "\"A spaceship exploring a distant galaxy.\"",
+        "\"A majestic waterfall cascading down a rocky cliff.\"",
+        "\"A plate of mouthwatering sushi rolls arranged beautifully.\"",
+        "\"An enchanted castle surrounded by a magical moat and floating lanterns.\""
+    ]
+    
+    @State private var randomExample = ""
     @State var typingMessage: String = ""
     @ObservedObject var dalleViewModel = DalleViewModel()
     @Namespace var bottomID
@@ -40,7 +54,7 @@ struct DalleView: View {
                     VStack {
                         Image(systemName: "paintbrush")
                             .font(.largeTitle)
-                        Text("Write your first message!")
+                        Text(randomExample)
                             .font(.subheadline)
                             .padding(10)
                     }
@@ -82,6 +96,13 @@ struct DalleView: View {
             .navigationTitle("DALL·E 2")
             .navigationBarTitleDisplayMode(.inline)
         }
+        .onAppear {
+            chooseRandomExample()
+        }
+    }
+    
+    private func chooseRandomExample() {
+        randomExample = examples.randomElement() ?? ""
     }
     
     private func sendMessage() {
