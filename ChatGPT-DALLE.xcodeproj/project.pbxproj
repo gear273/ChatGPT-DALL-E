@@ -11,6 +11,16 @@
 		12B7417A2A37D97A00FF62AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B741792A37D97A00FF62AE /* ContentView.swift */; };
 		12B7417C2A37D97C00FF62AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B7417B2A37D97C00FF62AE /* Assets.xcassets */; };
 		12B7417F2A37D97C00FF62AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B7417E2A37D97C00FF62AE /* Preview Assets.xcassets */; };
+		12B741872A37DA6700FF62AE /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 12B741862A37DA6700FF62AE /* OpenAIKit */; };
+		12B7418A2A37DB2200FF62AE /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 12B741892A37DB2200FF62AE /* ChatGPTSwift */; };
+		12B741902A37DB9900FF62AE /* DalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B7418F2A37DB9900FF62AE /* DalleViewModel.swift */; };
+		12B741922A37DC2400FF62AE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B741912A37DC2400FF62AE /* Message.swift */; };
+		12B741952A37DDCA00FF62AE /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B741942A37DDCA00FF62AE /* MessageView.swift */; };
+		12B741972A37E19000FF62AE /* MessageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B741962A37E19000FF62AE /* MessageIndicatorView.swift */; };
+		12B741992A37E27100FF62AE /* DalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B741982A37E27100FF62AE /* DalleView.swift */; };
+		12B7419B2A37E57500FF62AE /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B7419A2A37E57500FF62AE /* ImageSaver.swift */; };
+		12B7419F2A37E6F600FF62AE /* GPT3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B7419E2A37E6F600FF62AE /* GPT3View.swift */; };
+		12B741A32A37E76300FF62AE /* GPT3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B741A22A37E76300FF62AE /* GPT3ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,14 @@
 		12B741792A37D97A00FF62AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		12B7417B2A37D97C00FF62AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B7417E2A37D97C00FF62AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12B7418F2A37DB9900FF62AE /* DalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleViewModel.swift; sourceTree = "<group>"; };
+		12B741912A37DC2400FF62AE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		12B741942A37DDCA00FF62AE /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		12B741962A37E19000FF62AE /* MessageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageIndicatorView.swift; sourceTree = "<group>"; };
+		12B741982A37E27100FF62AE /* DalleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleView.swift; sourceTree = "<group>"; };
+		12B7419A2A37E57500FF62AE /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		12B7419E2A37E6F600FF62AE /* GPT3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT3View.swift; sourceTree = "<group>"; };
+		12B741A22A37E76300FF62AE /* GPT3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT3ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B7418A2A37DB2200FF62AE /* ChatGPTSwift in Frameworks */,
+				12B741872A37DA6700FF62AE /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +71,10 @@
 		12B741762A37D97A00FF62AE /* ChatGPT-DALLE */ = {
 			isa = PBXGroup;
 			children = (
+				12B7418E2A37DB5300FF62AE /* Views */,
+				12B7418D2A37DB4E00FF62AE /* ViewModels */,
+				12B7418C2A37DB4B00FF62AE /* Models */,
+				12B7418B2A37DB4500FF62AE /* Extensions */,
 				12B741772A37D97A00FF62AE /* ChatGPT_DALLEApp.swift */,
 				12B741792A37D97A00FF62AE /* ContentView.swift */,
 				12B7417B2A37D97C00FF62AE /* Assets.xcassets */,
@@ -65,6 +89,50 @@
 				12B7417E2A37D97C00FF62AE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		12B7418B2A37DB4500FF62AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12B7419A2A37E57500FF62AE /* ImageSaver.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		12B7418C2A37DB4B00FF62AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12B741912A37DC2400FF62AE /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12B7418D2A37DB4E00FF62AE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				12B7418F2A37DB9900FF62AE /* DalleViewModel.swift */,
+				12B741A22A37E76300FF62AE /* GPT3ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		12B7418E2A37DB5300FF62AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12B7419E2A37E6F600FF62AE /* GPT3View.swift */,
+				12B741982A37E27100FF62AE /* DalleView.swift */,
+				12B741932A37DDBF00FF62AE /* Messages */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12B741932A37DDBF00FF62AE /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				12B741942A37DDCA00FF62AE /* MessageView.swift */,
+				12B741962A37E19000FF62AE /* MessageIndicatorView.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +151,10 @@
 			dependencies = (
 			);
 			name = "ChatGPT-DALLE";
+			packageProductDependencies = (
+				12B741862A37DA6700FF62AE /* OpenAIKit */,
+				12B741892A37DB2200FF62AE /* ChatGPTSwift */,
+			);
 			productName = "ChatGPT-DALLE";
 			productReference = 12B741742A37D97A00FF62AE /* ChatGPT-DALLE.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +183,10 @@
 				Base,
 			);
 			mainGroup = 12B7416B2A37D97A00FF62AE;
+			packageReferences = (
+				12B741852A37DA6700FF62AE /* XCRemoteSwiftPackageReference "OpenAIKit" */,
+				12B741882A37DB2200FF62AE /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
+			);
 			productRefGroup = 12B741752A37D97A00FF62AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +213,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B741972A37E19000FF62AE /* MessageIndicatorView.swift in Sources */,
+				12B741A32A37E76300FF62AE /* GPT3ViewModel.swift in Sources */,
+				12B741992A37E27100FF62AE /* DalleView.swift in Sources */,
+				12B7419F2A37E6F600FF62AE /* GPT3View.swift in Sources */,
+				12B741902A37DB9900FF62AE /* DalleViewModel.swift in Sources */,
+				12B741922A37DC2400FF62AE /* Message.swift in Sources */,
 				12B7417A2A37D97A00FF62AE /* ContentView.swift in Sources */,
 				12B741782A37D97A00FF62AE /* ChatGPT_DALLEApp.swift in Sources */,
+				12B741952A37DDCA00FF62AE /* MessageView.swift in Sources */,
+				12B7419B2A37E57500FF62AE /* ImageSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +421,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12B741852A37DA6700FF62AE /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcodotio/OpenAIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		12B741882A37DB2200FF62AE /* XCRemoteSwiftPackageReference "ChatGPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12B741862A37DA6700FF62AE /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12B741852A37DA6700FF62AE /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
+		12B741892A37DB2200FF62AE /* ChatGPTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12B741882A37DB2200FF62AE /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
+			productName = ChatGPTSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12B7416C2A37D97A00FF62AE /* Project object */;
 }
