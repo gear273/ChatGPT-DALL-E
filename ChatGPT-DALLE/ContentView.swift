@@ -7,7 +7,6 @@
 
 import UIKit
 import SwiftUI
-import SafariServices
 
 struct ContentView: View {
     @State private var isLoggedIn = false
