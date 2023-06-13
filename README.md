@@ -11,5 +11,5 @@ If you don't know how, here is the method to getting your API key:
   6. The OpenAI platform will generate an API key for you.
   7. Once the API key is generated, copy it and store it securely. Make sure not to share it with others or expose it publicly.
 
-<img src="https://raw.githubusercontent.com/calebhrenchir/ChatGPT-DALL-E/main/GPT.png" width="286" height="558" alt="CHAT TAB">
-<img src="https://raw.githubusercontent.com/calebhrenchir/ChatGPT-DALL-E/main/DALL-E.png" width="286" height="558" alt="CHAT TAB">
+![CHAT TAB](GPT.png)
+![CHAT TAB](DALL-E.png)
