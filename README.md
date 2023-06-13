@@ -1,5 +1,5 @@
 # ChatGPT-DALL-E
-Simple app to feature OpenAI's ChatGPT and DALL-E-2 Image generation api using SwiftUI.
+Simple app to feature OpenAI's ChatGPT and DALL-E-2 Image generation api using SwiftUI & MVVM.
 
 You must replace the OpenAI API Key located in the DalleViewModel and GPT3ViewModel file.
 If you don't know how, here is the method to getting your API key:
